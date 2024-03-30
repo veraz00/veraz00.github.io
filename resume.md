@@ -3,7 +3,7 @@ layout: resume
 title: Resume
 permalink: /resume/
 description: >
-  Hi, I'm DaeIn Lee.
+  Hi, I'm Vera Zeng.
 hide_description: true
 sidebar: true
 order: 5
