@@ -54,7 +54,10 @@ education:
     startDate: "2021-01-02"
     endDate: "2022-05-21"
     gpa: "3.32/4.0"
-# projects:
+projects:
+  - title: ROWFOLLOW FROM IMAGE AND POINCLOUD 
+  - title: 2D VINEYARD SEGMENTATION
+  - title: AUTOMATIC IMPLEMENT DETECTION 
 #   - title: "Bw-Tree Performance Boosting"
 #     startDate: "2018-08-01"
 #     endDate: "2019-10-31"
