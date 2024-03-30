@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Model Structure: Swin-T"
-subtitle: "Model Structure: Swin-T"
+title: "Swin Transformer2: Model Structure"
+subtitle: "Swin Transformer2: Model Structure"
 category: engineer 
 tags: papernotes 
 ---

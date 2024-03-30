@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Pixel
-slug: pixel
+title: Article
+slug: article
 category: engineer
 sidebar: true
 description: >
-   Where I know the Convolution Network (CNN)
+  Nibble the food on the plate 
 ---

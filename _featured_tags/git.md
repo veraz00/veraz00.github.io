@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Software
-slug: software
+title: Git
+slug: git
 category: user
 sidebar: true
 description: >
-   Notes related to software 
+   Interacting with Git
 ---

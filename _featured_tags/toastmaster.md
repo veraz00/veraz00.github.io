@@ -1,6 +1,6 @@
 ---
 layout: tag-list
-type: category
+type: tag
 title: Toastmaster
 slug: toastmaster
 sidebar: false

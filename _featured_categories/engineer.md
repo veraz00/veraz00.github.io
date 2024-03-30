@@ -6,5 +6,5 @@ slug: engineer
 sidebar: true
 order: 2
 description: >
-  This is how I make a living 
+  This is what I make a living by  
 ---

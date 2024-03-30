@@ -46,7 +46,7 @@ author:
   picture: /assets/img/profile.jpg
   social:
     github: veraz00
-    linkedin: http://www.linkedin.com/in/verazeng00.com
+    linkedin: http://www.linkedin.com/in/veraz00.com
 
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
@@ -73,7 +73,7 @@ legal:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2022. All rights reserved.
+copyright: © 2024. All rights reserved.
 
 # Format of the permalinks
 # permalink:             /blog/:categories/:year-:month-:day-:title/
@@ -142,16 +142,16 @@ defaults:
       sitemap: false
 
   # Don't include site verification file(for google) in the sitemap
-  - scope:
-      path: google93abcae935f31b7d.html
-    values:
-      sitemap: false
+  # - scope:
+  #     path: google93abcae935f31b7d.html
+  #   values:
+  #     sitemap: false
 
   # Don't include site verification file(for naver) in the sitemap
-  - scope:
-      path: navera03014a241218f942080c56d67e79469.html
-    values:
-      sitemap: false
+  # - scope:
+  #     path: navera03014a241218f942080c56d67e79469.html
+  #   values:
+  #     sitemap: false
 
   # You can use the following to enable comments on all posts.
   - scope:
@@ -388,7 +388,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 
 # Where you proof that you own this site (used by jekyll-seo-tag)
-google_site_verification: "zIn7l_GwuOi4WnyRQsdhI9Jpn6IAs0SLR_4HG8OZzsM"
+# google_site_verification: "zIn7l_GwuOi4WnyRQsdhI9Jpn6IAs0SLR_4HG8OZzsM"
 # -- or --
 # webmaster_verifications:
 #   google:              <verification-id>

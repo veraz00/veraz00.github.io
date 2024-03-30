@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Pointcloud
-slug: pointcloud
+title: Project
+slug: project
 category: engineer
 sidebar: true
 description: >
-   Put it into model. AI knows it better than us! 
+   Can I finally build an AI who helps do projects thoroughly?  
 ---

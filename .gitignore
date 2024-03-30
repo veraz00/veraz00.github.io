@@ -4,6 +4,7 @@ _site
 _drafts
 .ruby-version
 **/archive 
+**/ll_notes
 
 # Numerous always-ignore extensions
 *.diff
