@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Rust
-slug: rust
-category: studylog
+title: Poem
+slug: poem
+category: writer
 sidebar: true
 description: >
-   Rust related posts
+   Poems and dreams
 ---

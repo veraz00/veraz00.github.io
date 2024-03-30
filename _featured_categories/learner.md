@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Study Log
-slug: studylog
+title: User
+slug: user
 sidebar: true
 order: 3
 description: >
-  Log study results
+  Be trained in large database
 ---

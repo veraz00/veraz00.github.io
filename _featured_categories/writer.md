@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Review
-slug: review
+title: Writer 
+slug: writer
 sidebar: true
 order: 4
 description: >
-  Reviews on hardware/software
+  Write down that comes to my mind
 ---

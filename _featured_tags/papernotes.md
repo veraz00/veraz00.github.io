@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Software
-slug: software
+title: PaperNotes
+slug: papernotes
 category: engineer
 sidebar: true
 description: >
-   Notes related to software 
+   Reading Session
 ---

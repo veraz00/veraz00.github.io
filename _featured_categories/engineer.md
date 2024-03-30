@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Dev. Log
-slug: devlog
+title: Engineer
+slug: engineer
 sidebar: true
 order: 2
 description: >
-  Anything about development
+  This is how I make a living 
 ---
