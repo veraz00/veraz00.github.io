@@ -24,11 +24,11 @@ title: Vera Zeng
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  Writing about work, life, and thoughts
-  Life Adventurer, Computer Vision Engineer, Poem Lover
+  Writing about work, thinking and life experience
+  Computer Vision Engineer, Life Adventurer,Poem Lover
 
 # A shorter description for the sidebar.
-tagline: Write about work, life, and thoughts
+tagline: Write about work, thinking and life experience
 
 # A list of keywords for your blog
 keywords: []
