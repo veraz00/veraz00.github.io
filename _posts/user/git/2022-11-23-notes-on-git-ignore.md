@@ -74,34 +74,27 @@ It can be used to represent any character, either [a-zA-Z0-9] or special charact
 
 In office git document, it mentioned * cannot be used to represent slash. It is wrong! Actually * can be used to represent either `/` or `\`
 
-### TEST 
+### Test 
 1. Create a directory with subdirectory and keep the current path under aws folder
 
-  ```shell
-  - aws
-    - utils
-      - 1.py
-      - 2.py
-        - data
-            - label1.txt
-    - download.py
-    - upload.py
-    - .gitignore
-  ```
-
-2. Edit .gitignore
-
-  ```shell
-  nano .gitignore
-  # content of .gitignore
-  ```
-
+	```shell
+	- aws
+	- utils
+		- 1.py
+		- 2.py
+		- data
+			- label1.txt
+	- download.py
+	- upload.py
+	- .gitignore
+	```
+2. Edit .gitignore by `nano .gitgnore` in terminal
 3. Create git on `.gitignore` level
 
-  ```shell
-  git init
-  git add .
-  ```
+	```shell
+	git init
+	git add .
+	```
 4. Check the file added into `.git`, by `git ls-files`
   > The result would be nothing, which means all the files are ignored by `.git`
   > But here are some files `utils/1.py`, which involved `/` but still be represented by `*` and ignored by `.git`
@@ -110,13 +103,13 @@ In office git document, it mentioned * cannot be used to represent slash. It is 
 1. Modify `.gitignore` by adding `aws/utils/*` to a new line 
 2. Re-do git 
 
-  ```shell
-  git rm --cached . # remove the previous cached git
-  git add .
-  git ls -files 
-  ```
+	```shell
+	git rm --cached . # remove the previous cached git
+	git add .
+	git ls -files 
+	```
 3. You can see, the files from utils folder would be filter out 
-aws/utils can be replaced as `aws/utils/` , or `aws/utils/*`
+`aws/utils` can be replaced as `aws/utils/` , or `aws/utils/*`
 
 ## Double Asterisk **
 
@@ -148,14 +141,14 @@ For example, `!data` would keep the data folder
 
 Let's look at the last example, if we want to ignore the whole aws folder but keep the aws one. There are 2 methods 
 
-**method1**
+**Method1**
 
 ```shell
 aws/*.*  # ignore files in aws folder
 aws/data/*   # ignore data subfolder in aws folder`
 ```
 
-**method2**
+**Method2**
 
 ```shell
 aws/*

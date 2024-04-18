@@ -38,10 +38,10 @@ First, you need to install Docker Server & Client on your system. Follow these s
     sudo rm -rf /var/lib/containerd
     ```
 2. Install Docker
+
     ```shell
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
     ```
-
 3. Verify the Docker installation by checking the version by checking `docker version` in terminal
 
 Make sure the version information is displayed correctly as following.
