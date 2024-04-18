@@ -6,13 +6,21 @@ category: user
 tags: git
 ---
 
+<!--more-->
+
+* this unordered seed list will be replaced by the toc
 {:toc}
 
-When adding code into .git, which is used to push code scripts into github (website), we would set `.gitignore`. In it, filenames which are set as ignored file for `.git` would be listed
 
-# Example 
+When adding code into `.git`, which is used to push code scripts into github (website), we would set `.gitignore`. In it, filenames which are set as ignored file for `.git` would be listed
+
+## Example 
 
 The following is part of `.gitignore` file from [official yolov7 repo](https://github.com/WongKinYiu/yolov7/blob/main/.gitignore)
+
+<details>
+<summary>.gitignore</summary>
+<div markdown="1">
 
 ```shell 
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
@@ -53,8 +61,10 @@ data/images/*
 
 .idea/**/dataSources.ids # ignore dataSources.ids under any level of .idea folder
 ```
+</div>
+</details>
 
-# Regex Use
+## Regex Use
 
 You may be confused about what exact file path it pointed to, or how to use `*` or `**`. Take easy, you gonna figure out all when reading the following.
 
@@ -67,53 +77,44 @@ In office git document, it mentioned * cannot be used to represent slash. It is 
 ### TEST 
 1. Create a directory with subdirectory and keep the current path under aws folder
 
-```shell
-- aws
-   - utils
-     - 1.py
-     - 2.py
-       - data
-           - label1.txt
-  - download.py
-  - upload.py
-  - .gitignore
-```
+  ```shell
+  - aws
+    - utils
+      - 1.py
+      - 2.py
+        - data
+            - label1.txt
+    - download.py
+    - upload.py
+    - .gitignore
+  ```
 
 2. Edit .gitignore
 
-```shell
-nano .gitignore
-# content of .gitignore
-```
+  ```shell
+  nano .gitignore
+  # content of .gitignore
+  ```
 
 3. Create git on `.gitignore` level
 
-```shell
-git init
-git add .
-```
-4. Check the file added into `.git`
-
-```shell
-git ls-files
-```
-The result would be nothing, which means all the files are ignored by `.git`
-But here are some files `utils/1.py`, which involved `/` but still be represented by `*` and ignored by `.git`
+  ```shell
+  git init
+  git add .
+  ```
+4. Check the file added into `.git`, by `git ls-files`
+  > The result would be nothing, which means all the files are ignored by `.git`
+  > But here are some files `utils/1.py`, which involved `/` but still be represented by `*` and ignored by `.git`
 
 ### Play
-1. Modify `.gitignore`
-
-```shell 
-# content of .gitignore
-aws/utils/*
-```
+1. Modify `.gitignore` by adding `aws/utils/*` to a new line 
 2. Re-do git 
 
-```shell
-git rm --cached . # remove the previous cached git
-git add .
-git ls -files 
-```
+  ```shell
+  git rm --cached . # remove the previous cached git
+  git add .
+  git ls -files 
+  ```
 3. You can see, the files from utils folder would be filter out 
 aws/utils can be replaced as `aws/utils/` , or `aws/utils/*`
 
@@ -137,19 +138,17 @@ Two asterisks `**` specify any number of subdirectories
 
 `*.(png|jpg|gif)`: filter out any file end with png, jpg, git
 
-# Special Use 
+## Special Use 
 
-## Exclamation Mark !
+### Exclamation Mark !
 
 `!` is used to keep files. In other words, the file start with ! in .gitignore would be kept by git 
 
-### Example
+For example, `!data` would keep the data folder 
 
-`!data`: keep the data folder 
+Let's look at the last example, if we want to ignore the whole aws folder but keep the aws one. There are 2 methods 
 
-Based on the last example, if we want to ignore the whole aws folder but keep the aws one. There are 2 methods 
-
-***method1**
+**method1**
 
 ```shell
 aws/*.*  # ignore files in aws folder
@@ -164,13 +163,13 @@ aws/*
 !aws/utils/*`
 ```
 
-# Subfolder
+## Subfolder
 
 On git, we cannot keep folder structure but ignore all the files inside. There is a solution to achieve this
 
 **Solution**
 
-Creating a .gitignore within this directory
+Creating a `.gitignore` within this directory
 
 ```shell
 # content of this .gitignore 
@@ -184,13 +183,13 @@ Creating a .gitignore within this directory
 
 So when add `.gitignore` on this directory, it would works on this directory only 
 
-# Self-Train 
+## Self-Train 
 
 - Choose one `.gitignore` repo, and try to understand it 
 
 - Write `.gitignore` by yourself, to see whether it can keep the files which you expects to have into git
 
-# Refer
-- https://stackoverflow.com/questions/25554504/what-does-mean-in-gitignore
-- https://git-scm.com/docs/gitignore
-- https://github.com/WongKinYiu/yolov7/blob/main/.gitignore
+## Refer
+1. https://stackoverflow.com/questions/25554504/what-does-mean-in-gitignore
+2. https://git-scm.com/docs/gitignore
+3. https://github.com/WongKinYiu/yolov7/blob/main/.gitignore
