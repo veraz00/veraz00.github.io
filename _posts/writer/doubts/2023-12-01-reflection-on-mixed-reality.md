@@ -6,6 +6,8 @@ category: writer
 tags: doubts
 ---
 
+![](/assets/img/2023-12-01/headset.jpg)
+
 At Meta Connect 2023, three groundbreaking products have emerged: the mixed reality glass, the emu platform, and smart glasses. **Today, I'd like to delve into the realm of mixed reality**.
 
 Mixed reality is a burgeoning industrial frontier that harnesses cutting-edge computer vision technology, paving the way for new research in 3D computer vision and simulated reality structures. It spans disciplines from mechanics to computer science and even the arts, making it a popular and innovative direction. **This allows us to leverage existing advancements while fostering the potential for further technical breakthroughs**.
