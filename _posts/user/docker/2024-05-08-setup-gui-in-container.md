@@ -6,6 +6,10 @@ tags: user
 layout: post
 ---
 
+<!--more-->
+
+* this unordered seed list will be replaced by the toc
+{:toc}
 
 Recently, I found myself delving into a project that demanded running **a labeling application built on the Vispy framework**. Originally developed on a Windows Subsystem for Linux (WSL) environment, attempting to run it on Ubuntu led to **OpenGL-related errors**, such as:
 ![](/assets/img/2024-05-08/error1.png){:height="360px" width="640px"}
@@ -132,7 +136,7 @@ Initially, I aimed to leverage the **X11 GUI server to establish display connect
 
 Despite these efforts, the attempt led to a frustrating error:
 
-```
+```bash
 File "/usr/lib/python3.10/tkinter/__init__.py", line 2299, in __init__
   self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
  _tkinter.TclError: couldn't connect to display ":1" ON CONTAINER
@@ -141,14 +145,14 @@ File "/usr/lib/python3.10/tkinter/__init__.py", line 2299, in __init__
 The steps I did are the following: 
 
 1. Open the access to X11 to any user 
-```
+```bash
 ls -al /tmp/.X11-unix
 chmod a+r /tmp/.X11-unix/*
 xhost
-
 ```
 2. Mount the access 
-```
+
+```bash
 docker run -i -t --rm \
 --net=host \
 -v /tmp:/tmp \
@@ -162,14 +166,12 @@ dairy-farm-dataset bash
 
 
 So I dig into how to solve it. When running `Xorg` on hostmachine, I got:
-```
+```bash
 /usr/lib/xorg/Xorg.wrap: Only console users are allowed to run the X server
 ```
-When run `gdm`, it raises error: 
-```
-Only the root user can run GDM
-```
-It shows the current username has no permission to create a display, which requires root priviledge to operate. This may explain the fails. After that, I stopped this direction, then tried the `xvfp`
+When run `gdm`, it raises error `Only the root user can run GDM`
+
+It shows **the current user has no permission to create a display**, which requires root priviledge to operate. This may explain the fails. After that, I stopped this direction, then tried the `xvfp`
 
 
 ## Fail2: Utilize xvfp 
