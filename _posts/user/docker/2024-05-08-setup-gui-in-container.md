@@ -2,7 +2,7 @@
 title: "Set up GUI in Container"
 subtitle: "Set up GUI in Container" 
 categories: user
-tags: user
+tags: docker
 layout: post
 ---
 
